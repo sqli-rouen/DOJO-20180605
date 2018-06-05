@@ -16,5 +16,16 @@ namespace SQLI.CodingDojo.Tests
             FizzBuzz.CheckValue(0);
             // Assert - 1 ou 0 (cas particulier avec MSTEST)
         }
+
+        [TestMethod]
+        public void Returns_1_if_param_is_1()
+        {
+            // Arrange
+            int param = 1;
+            // Act
+            int result = FizzBuzz.CheckValue(param);
+            // Assert
+            Assert.AreEqual(1, result);
+        }
     }
 }
