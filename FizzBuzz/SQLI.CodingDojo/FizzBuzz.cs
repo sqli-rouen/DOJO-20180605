@@ -8,12 +8,15 @@ namespace SQLI.CodingDojo
 {
     public class FizzBuzz
     {
-        public static int CheckValue(int value)
+        public static string CheckValue(int value)
         {
-            if (value == 0)
+            if(value==0)
                 throw new ArgumentException();
-            else 
-                return value;
+
+            if (value == 3)
+                return "Fizz";
+            else
+                return value.ToString();
         }
     }
 }

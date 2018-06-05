@@ -17,18 +17,17 @@ namespace SQLI.CodingDojo.Tests
             // Assert - 1 ou 0 (cas particulier avec MSTEST)
         }
 
-        [DataRow(1, 1)]
-        [DataRow(2, 2)]
+        [DataRow(1, "1")]
+        [DataRow(2, "2")]
         [TestMethod]
-        public void Returns_value_if_param_is_1_or_2(int param,int expected)
+        public void Returns_value_if_param_is_1_or_2(int param,string expected)
         {
             // Arrange
             // Act
-            int result = FizzBuzz.CheckValue(param);
+            string result = FizzBuzz.CheckValue(param);
             // Assert
             Assert.AreEqual(expected, result);
         }
-
 
         [TestMethod]
         public void Returns_Fizz_if_param_is_3()
@@ -36,9 +35,10 @@ namespace SQLI.CodingDojo.Tests
             //Arrange
             int param = 3;
             // Act
-            int result = FizzBuzz.CheckValue(param);
+            string result = FizzBuzz.CheckValue(param);
             // Assert
             Assert.AreEqual("Fizz", result);
         }
+        
     }
 }
