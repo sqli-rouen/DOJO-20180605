@@ -27,5 +27,16 @@ namespace SQLI.CodingDojo.Tests
             // Assert
             Assert.AreEqual(1, result);
         }
+
+        [TestMethod]
+        public void Returns_2_if_param_is_2()
+        {
+            //Arrange
+            int param = 2;
+            // Act
+            int result = FizzBuzz.CheckValue(param);
+            // Assert
+            Assert.AreEqual(2, result);
+        }
     }
 }
