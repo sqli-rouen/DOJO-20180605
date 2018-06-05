@@ -12,8 +12,10 @@ namespace SQLI.CodingDojo
         {
             if (value == 0)
                 throw new ArgumentException();
-            else
+            else if (value == 1)
                 return 1;
+            else 
+                return 2;
         }
     }
 }
