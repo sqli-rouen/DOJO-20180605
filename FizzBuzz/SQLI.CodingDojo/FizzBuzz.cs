@@ -10,7 +10,7 @@ namespace SQLI.CodingDojo
     {
         public static void CheckValue(int value)
         {
-            
+            throw new ArgumentException();
         }
     }
 }

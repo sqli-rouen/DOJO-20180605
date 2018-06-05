@@ -55,8 +55,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz\SQLI.CodingDojo.csproj">
-      <Project>{970CC101-2352-4A52-83EC-1704AAEF10C2}</Project>
+    <ProjectReference Include="..\SQLI.CodingDojo\SQLI.CodingDojo.csproj">
+      <Project>{970cc101-2352-4a52-83ec-1704aaef10c2}</Project>
       <Name>SQLI.CodingDojo</Name>
     </ProjectReference>
   </ItemGroup>
