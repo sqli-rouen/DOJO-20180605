@@ -8,9 +8,12 @@ namespace SQLI.CodingDojo
 {
     public class FizzBuzz
     {
-        public static void CheckValue(int value)
+        public static int CheckValue(int value)
         {
-            throw new ArgumentException();
+            if (value == 0)
+                throw new ArgumentException();
+            else
+                return 1;
         }
     }
 }
